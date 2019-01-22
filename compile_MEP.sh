@@ -129,7 +129,8 @@ rm -f $ld_file
 header1="#wrote on "
 DATE=`date "+%c"`
 header="$header1 $DATE"
-echo "$header"  >>      $ld_file
+echo "$header"		>>      $ld_file
+echo "$LD_LIBRARY_PATH"	>>	$ld_file
 #
 echo "wrote LD_LIBRARY_PATH to $ld_file"
 echo ""
