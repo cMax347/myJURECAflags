@@ -11,7 +11,7 @@
 #SBATCH --time=02:00:00
 #SBATCH -o log/MEPinterp-%j.out
 #SBATCH -e log/MEPinterp-%j.err
-#SBATCH -p develbooster
+#SBATCH -p booster
 #SBATCH --mail-user=m.merte@fz-juelich.de
 #SBATCH --mail-type=ALL 
 ##################################################
