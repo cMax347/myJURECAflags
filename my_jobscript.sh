@@ -5,12 +5,13 @@
 #
 ##### JOB SETUP #################################
 #SBATCH -J MEPinterp
-#SBATCH -N 2
-#SBATCH --ntasks=1368
-#SBATCH --time=30
-#SBATCH -o MEPinterp-%j.out
-#SBATCH -e MEPinterp-%j.err
-#SBATCH -p booster
+#SBATCH -A jiff40
+#SBATCH -N 1
+#SBATCH --ntasks=68
+#SBATCH --time=02:00:00
+#SBATCH -o log/MEPinterp-%j.out
+#SBATCH -e log/MEPinterp-%j.err
+#SBATCH -p develbooster
 #SBATCH --mail-user=m.merte@fz-juelich.de
 #SBATCH --mail-type=ALL 
 ##################################################
@@ -18,13 +19,25 @@
 
 #
 #
+##### make sure log dir exists ##################
+$log=./log
+if[ ! -d $log ]; then
+	mkdir $log
+fi
+################################################ 
+
+
+
+#
+#
 # 
 ##### ENV SETUP #################################
-source ~/mep_ld_lib_path.sh
-#################################################
+module load Architecture/KNL
+module load Intel IntelMPI imkl 
+################################################
 
 
-
+#
 #
 #
 #
