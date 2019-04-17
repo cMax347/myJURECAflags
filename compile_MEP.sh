@@ -25,14 +25,14 @@
 #
 #
 ###### setup Arch & comp version ########
-module purge 
-wait
+#module purge 
+#wait
 module load Architecture/KNL
 wait
 
-module use /usr/local/software/jurecabooster/OtherStages/
-wait
-module load Stages/2018a
+#module use /usr/local/software/jurecabooster/OtherStages/
+#wait
+#module load Stages/2018a
 #module load git (git seems to be available in Stages/2018a without further loading)
 ########################################
 
@@ -126,6 +126,9 @@ echo ""
 ##### SET  LD_LIBRARY_PATH  #####################
 #
 #  -> the file is then sourced by jobsripts ###
+#	
+#  -> DEPRECATED file not required anymore)
+#  -> only write for debug purposes
 # ----------------
 ld_file=~/mep_ld_lib_path.sh
 rm -f $ld_file

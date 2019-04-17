@@ -25,7 +25,7 @@ compilerSH="compile_MEP.sh"
 #
 #
 slurm_part="develbooster"
-max_wall=3
+max_wall=30
 ########################################
 
 
