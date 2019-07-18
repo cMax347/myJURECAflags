@@ -3,7 +3,7 @@
 #
 #******** JOB ALLOCATION ************************
 #SBATCH -J MEPinterp
-#SBATCH -A jiff40
+#SBATCH -A *******
 #SBATCH -N 1
 #SBATCH --ntasks=272
 #SBATCH --time=02:00:00
