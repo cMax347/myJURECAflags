@@ -68,6 +68,7 @@ module list
 #
 #
 ####### PIT PULL   ####################
+#echo "WARNING git pull disabled"
 wait
 echo ""
 echo "try to run update git, current status:"
@@ -103,7 +104,7 @@ if [ -f ./Makefile ]; then
 	wait
 	echo "...make done!"
 	#
-	exe="bin/mepInterp"
+	exe="bin/ju_wip"
 	if [ -f $exe ]; then
 		echo "SUCCESS wrote compiled exe to $exe"
 	else
@@ -130,17 +131,17 @@ echo ""
 #  -> DEPRECATED file not required anymore)
 #  -> only write for debug purposes
 # ----------------
-ld_file=~/mep_ld_lib_path.sh
-rm -f $ld_file
+#ld_file=~/mep_ld_lib_path.sh
+#rm -f $ld_file
 #
-header1="#wrote on "
-DATE=`date "+%c"`
-header="$header1 $DATE"
-echo "$header"		>>      $ld_file
-echo "$LD_LIBRARY_PATH"	>>	$ld_file
+#header1="#wrote on "
+#DATE=`date "+%c"`
+#header="$header1 $DATE"
+#echo "$header"		>>      $ld_file
+#echo "$LD_LIBRARY_PATH"	>>	$ld_file
 #
-echo "wrote LD_LIBRARY_PATH to $ld_file"
-echo ""
+#echo "wrote LD_LIBRARY_PATH to $ld_file"
+#echo ""
 ##################################################
 
 
