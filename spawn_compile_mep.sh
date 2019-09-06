@@ -20,12 +20,12 @@ source ~/.bashrc
 wait
 #
 #
-target=$myBIN/MEPinterp/build
+target=$myBIN/ju_wip/build
 compilerSH="compile_MEP.sh"
 #
 #
 slurm_part="develbooster"
-max_wall=30
+max_wall=10
 ########################################
 
 
@@ -34,7 +34,7 @@ max_wall=30
 
 
 
-
+mkdir -v $target 
 #
 #
 #
