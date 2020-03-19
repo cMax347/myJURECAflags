@@ -70,8 +70,8 @@ def npy_compare(f1,f2):
 		tens1	=	np.load(f1)
 		tens2	=	np.load(f2)
 		#
-		print('...\n[npy_compare]:	loaded data from file ',	f1		, ' ', 	tens1.shape		)
-		print('[npy_compare]:	loaded data from file ',	f2		, ' ', 	tens2.shape		)		
+		print('...\n[npy_compare]:	loaded data from file ',	f1		, ' ', 	tens1.shape	, '[absmin=	',np.amin(np.abs(tens1)),'; absmax=',np.amax(np.abs(tens1)),']'	)
+		print('[npy_compare]:	loaded data from file ',	f2		, ' ', 	tens2.shape		, '[absmin=	',np.amin(np.abs(tens2)),'; absmax=',np.amax(np.abs(tens2)),']'		)		
 		
 		#
 		passed	=	False
