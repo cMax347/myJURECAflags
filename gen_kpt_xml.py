@@ -26,8 +26,8 @@ xml_tree.set('count',str(nkpts))
 # add kpts to xml tree
 for kpt in kpts:
 	xml_kpt 		= etree.SubElement(xml_tree, 'kPoint')
-	xml_kpt.set(		'weight',		str(kweight))	
-	xml_kpt.text	= str(kpt[0])+' '+str(kpt[1])+' '+str(kpt[2])	
+	xml_kpt.set(		'weight',		str(kweight))
+	xml_kpt.text	= str(kpt[0])+' '+str(kpt[1])+' '+str(kpt[2])
 #~
 #
 # create a new XML file with the results
